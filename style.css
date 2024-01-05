@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500;700&display=swap");
 
 .hero-container {
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,22 +25,63 @@
   object-fit: contain;
 }
 
-.username-fieldset {
+fieldset {
+  border: 1px solid #929292;
+  margin-bottom: 20px;
   border-radius: 10px;
   font-size: 1.2rem;
 }
 
-.username-fieldset legend {
+fieldset legend {
   margin: 0px 10px;
   padding: 0px 10px;
 }
 
-#username {
+#username,
+#password,
+#password-confirm {
   border: none;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   width: 100%;
 }
 
-#username:focus {
+#username:focus,
+#password:focus,
+#password-confirm:focus {
   outline: none;
+}
+
+#password-strength {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+#six-letters,
+#special-character,
+#number {
+  margin: 0px 5px;
+  order: 1;
+  background-color: rgb(215, 215, 215);
+  padding: 4px 7px;
+  border-radius: 6px;
+  margin-left: 4px;
+}
+
+#submit-btn {
+  color: white;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px 0px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(51, 141, 51);
+}
+
+.password-check,
+.taken-message {
+  color: #c20000;
+  width: 100%;
+  margin: 0px;
+  margin-left: 3px;
 }
